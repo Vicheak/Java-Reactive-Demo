@@ -1,0 +1,13 @@
+package review_concept;
+
+import java.util.List;
+
+public class Student {
+	
+	private String name; 
+	private String gender; 
+	private int age; 
+	private List<String> subjects; 
+	
+
+}

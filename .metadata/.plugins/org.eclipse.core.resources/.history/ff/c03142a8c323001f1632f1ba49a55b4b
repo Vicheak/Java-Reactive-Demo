@@ -1,0 +1,44 @@
+package review_concept;
+
+import java.util.List;
+import java.util.function.Consumer;
+
+public class GenericsReview {
+
+	public static void main(String[] args) {
+
+		List<String> names = List.of("Dara", "Thida", "Veasna");
+
+//		names.stream()
+//			.forEach(x -> System.out.println(x));
+//			.forEach(x -> {
+//				int length = x.length();
+//				System.out.println(x + " : has " + length + " letters");
+//			});	
+		
+//		names.stream()
+//			.forEach(System.out::println);	
+		
+//		names.stream()
+//			.forEach(printText());
+		
+		GenericsReview genericsReview = new GenericsReview(); 
+		
+		names.stream()
+			.forEach(genericsReview::print);
+
+	}
+	
+	private static Consumer<String> printText(){
+//		return t -> System.out.println(t);
+		return t -> {
+			int length = t.length();
+			System.out.println(t + " : has " + length + " letters");
+		}; 
+	}
+	
+	private void print(String message) {
+		System.out.println(message);
+	}
+
+}

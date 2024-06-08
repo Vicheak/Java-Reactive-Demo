@@ -1,0 +1,12 @@
+package java_reactive_demo;
+
+public class Demo1 {
+	
+	public static void main(String[] args) {
+		
+		//Mono : publisher (0->1 item)
+		//Flux
+		
+	}
+
+}

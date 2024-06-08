@@ -1,0 +1,10 @@
+package review_concept;
+
+public class Student {
+	
+	private String name; 
+	private String gender; 
+	private int age; 
+	
+
+}

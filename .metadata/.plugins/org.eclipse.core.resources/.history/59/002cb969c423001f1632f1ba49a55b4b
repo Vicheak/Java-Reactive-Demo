@@ -1,0 +1,13 @@
+package review_concept;
+
+public class Printer {
+	
+	public void print(String text) {
+		System.out.println("print : " + text);
+	}
+	
+	public void printAndCount(String text) {
+		System.out.println(x + " : has " + length + " letters");
+	}
+
+}

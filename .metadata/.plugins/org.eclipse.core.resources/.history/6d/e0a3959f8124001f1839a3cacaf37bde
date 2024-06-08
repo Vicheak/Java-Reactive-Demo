@@ -1,0 +1,17 @@
+package java_reactive_demo;
+
+public class Demo5FromSupplier {
+
+	public static void main(String[] args) {
+
+		//Function, Consumer, Predicate, Supplier
+		
+		//Supplier () -> "asd"
+		
+		
+
+	}
+	
+	
+
+}

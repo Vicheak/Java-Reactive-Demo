@@ -1,0 +1,32 @@
+package review_concept;
+
+import java.util.List;
+
+public class StreamDemo {
+	
+	public static void main(String[] args) {
+		
+		List<Student> students = List.of(
+				new Student("Dara", "M", 23, List.of("Java Basic", "Spring Boot")),
+				new Student("Thida", "F", 21, List.of("Java Basic")),
+				new Student("Socheata", "F", 22, List.of("Java Advance", "Spring Boot")),
+				new Student("Veasna", "M", 25, List.of("Microservice", "Spring Boot", "Java Reactive"))
+				); 
+		
+		//get number of characters of students 
+		//with intermediate operation
+		students.stream()
+			.map(x -> x.getName())
+			.map(x -> x.length())
+			.forEach(System.out::println);
+		
+//		numberStream.forEach(x -> System.out.println(x));
+	
+		//lazy process -> need to call terminal operation
+//		System.out.println(numberStream);
+		
+		//find all subjects
+		
+	}
+
+}

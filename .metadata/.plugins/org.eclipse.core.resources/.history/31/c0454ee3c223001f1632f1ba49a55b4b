@@ -1,0 +1,23 @@
+package review_concept;
+
+import java.util.List;
+
+public class GenericsReview {
+
+	public static void main(String[] args) {
+
+		List<String> names = List.of("Dara", "Thida", "Veasna");
+
+//		names.stream()
+//			.forEach(x -> System.out.println(x));
+//			.forEach(x -> {
+//				Lint length = x.length();
+//				System.out.println(x + " : has " + length + " letters");
+//			});	
+		
+		names.stream()
+		.forEach(System.out::println);	
+
+	}
+
+}

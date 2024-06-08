@@ -1,0 +1,18 @@
+package java_reactive_demo;
+
+import reactor.core.publisher.Mono;
+
+public class Demo2Error {
+	
+	public static void main(String[] args) {
+		
+		Mono<Integer> mono = Mono.just(1);
+		
+		mono.subscribe(
+				x -> System.out.println("onNext : " + x),
+				x -> System.out.println("onError : " + x.getMessage()),
+				() -> System.out.println("onComplete : Done")); 
+		
+	}
+
+}

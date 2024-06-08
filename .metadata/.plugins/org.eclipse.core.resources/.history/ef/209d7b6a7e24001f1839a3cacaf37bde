@@ -1,0 +1,9 @@
+package java_reactive_demo.util;
+
+public class Util {
+	
+	public static void onNext(String message) {
+		
+	}
+
+}

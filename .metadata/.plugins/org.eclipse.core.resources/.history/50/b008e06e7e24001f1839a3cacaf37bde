@@ -1,0 +1,11 @@
+package java_reactive_demo.util;
+
+import java.util.function.Consumer;
+
+public class Util {
+	
+	public static Consumer<String> onNext(String message) {
+		
+	}
+
+}

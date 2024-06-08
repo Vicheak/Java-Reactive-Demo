@@ -1,0 +1,20 @@
+INDEX VERSION 1.134+/Users/macbookpro/Microservices/Java Reactive/Project/.metadata/.plugins/org.eclipse.jdt.core
+965217545.index
+3729244278.index
+886658326.index
+210909449.index
+2793493380.index
+1865797976.index
+615590976.index
+4144487147.index
+1478422893.index
+3145478168.index
+1476612127.index
+2096480025.index
+2672609195.index
+2169482737.index
+3732028330.index
+1578245998.index
+3221097617.index
+3198878472.index
+3421672772.index

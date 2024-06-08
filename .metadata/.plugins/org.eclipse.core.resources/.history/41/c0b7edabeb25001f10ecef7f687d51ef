@@ -1,0 +1,22 @@
+package java_reactive_demo.exercise;
+
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+
+public class FileService {
+	
+	private 
+	
+	public static String readFile(String fileName) {
+		Path path = Paths.get("src/main/resources");
+		try {
+			return Files.readString(path.resolve(fileName));
+		} catch (IOException e) {
+			e.printStackTrace();
+		} 
+		return null; 
+	}
+
+}

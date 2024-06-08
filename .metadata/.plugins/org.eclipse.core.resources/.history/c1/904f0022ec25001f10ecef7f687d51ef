@@ -1,0 +1,13 @@
+package java_reactive_demo;
+
+import java_reactive_demo.exercise.FileService;
+
+public class Demo7ReadFile {
+	
+	public static void main(String[] args) {
+		
+		FileService.read("file1.txt");
+		
+	}
+
+}

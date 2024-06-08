@@ -1,0 +1,21 @@
+package java_reactive_demo;
+
+import com.github.javafaker.Faker;
+
+public class Demo5FromSupplier {
+
+	public static void main(String[] args) {
+
+		//Function, Consumer, Predicate, Supplier
+		
+		//Supplier () -> "asd"
+		
+		
+
+	}
+	
+	private static String getName() {
+		return Faker.instance().name().fullName(); 
+	}
+
+}

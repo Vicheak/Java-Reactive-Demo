@@ -1,0 +1,23 @@
+package java_reactive_demo;
+
+import java_reactive_demo.util.Util;
+import reactor.core.publisher.Mono;
+
+public class Demo3Error {
+	
+	public static void main(String[] args) {
+		
+//		Mono<Integer> mono = Mono.just(1).map(x -> x % 0);
+		Mono<String> mono = Mono
+				.just("Thida");
+		
+//		mono.subscribe(
+//				x -> System.out.println("onNext : " + x),
+//				x -> System.out.println("onError : " + x.getMessage()),
+//				() -> System.out.println("onComplete : Done")); 
+		
+		mono.subscribe(Util.onNext(), Util.onError(), Util.onComplete()); 
+		
+	}
+
+}

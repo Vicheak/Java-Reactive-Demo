@@ -1,0 +1,27 @@
+package java_reactive_demo;
+
+import com.github.javafaker.Faker;
+
+import reactor.core.publisher.Mono;
+
+public class Demo5FromSupplier {
+
+	public static void main(String[] args) {
+
+		//Function, Consumer, Predicate, Supplier
+		
+		//Supplier () -> "asd"
+		
+		//we use just method only when we already have data
+		//Mono<String> mono = Mono.just(getName());
+		
+		
+		
+	}
+	
+	private static String getName() {
+		System.out.println("Generating name ...");
+		return Faker.instance().funnyName().name(); 
+	}
+
+}

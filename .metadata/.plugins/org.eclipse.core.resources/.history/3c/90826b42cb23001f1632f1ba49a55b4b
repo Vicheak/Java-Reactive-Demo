@@ -1,0 +1,16 @@
+package java_reactive_demo;
+
+import reactor.core.publisher.Mono;
+
+public class Demo1 {
+	
+	public static void main(String[] args) {
+		
+		//Mono : publisher with 0->1 item
+		//Flux : publisher with 0->N item
+		
+		Mono<String> mono = Mono.just("Dara"); 
+		
+	}
+
+}
