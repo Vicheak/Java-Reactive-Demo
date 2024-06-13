@@ -12,7 +12,7 @@ public class CountryRepository {
 		}else if(countryId == 2) {
 			return Mono.empty(); 
 		}
-		return Mono.error(new RuntimeException("countryId proovided is not in the range")); 
+		return Mono.error(new RuntimeException("countryId provided is not in the range")); 
 	}
 	
 	//onNext, onError, onComplete

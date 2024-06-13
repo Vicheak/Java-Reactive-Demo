@@ -1,0 +1,15 @@
+package java_reactive_demo.flux;
+
+public class Flux10MonoToFlux {
+
+	public static void main(String[] args) {
+	
+		
+		
+	}
+	
+	public void getName() {
+		
+	}
+
+}

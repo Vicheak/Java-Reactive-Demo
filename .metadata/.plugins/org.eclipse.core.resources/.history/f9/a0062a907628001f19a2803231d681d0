@@ -1,0 +1,13 @@
+package java_reactive_demo.flux;
+
+import reactor.core.publisher.Flux;
+
+public class Flux8FluxVsList {
+
+	public static void main(String[] args) {
+		
+		
+
+	}
+
+}

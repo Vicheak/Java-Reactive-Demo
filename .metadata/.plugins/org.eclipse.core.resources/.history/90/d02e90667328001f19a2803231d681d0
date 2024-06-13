@@ -1,0 +1,35 @@
+package java_reactive_demo.util;
+
+import java.util.function.Consumer;
+
+import com.github.javafaker.Faker;
+
+public class Util {
+	
+	public static final Faker FAKER = Faker.instance(); 
+	
+	public static Consumer<String> onNext() {
+		return x -> System.out.println("onNext : " + x);
+	}
+	
+	public static Consumer<Throwable> onError(){
+		return x -> System.out.println("onError : " + x.getMessage());
+	}
+	
+	public static Runnable onComplete(){
+		return () -> System.out.println("onComplete : Done");
+	}
+	
+	public static void delay(int second) {
+		try {
+			Thread.sleep(second * 1000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	public static Faker faker() {
+		return Faker.instance(); 
+	}
+
+}

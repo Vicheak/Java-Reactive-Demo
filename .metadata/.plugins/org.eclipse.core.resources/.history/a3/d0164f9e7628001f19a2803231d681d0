@@ -1,0 +1,21 @@
+package java_reactive_demo.util;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class ColorGenerator {
+	
+	public List<String> getColors(int number){
+		List<String> colors = new ArrayList<>(); 
+		for(int i = 1; i <= number; i++) {
+			colors.add(getColor());
+		}
+		return colors; 
+	}
+	
+	private String getColor() {
+		Util.delay(1);
+		return Util.faker().color().name(); 
+	}
+
+}

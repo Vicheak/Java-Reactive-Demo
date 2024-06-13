@@ -1,0 +1,17 @@
+package java_reactive_demo.flux;
+
+import java.util.List;
+import java.util.stream.Stream;
+
+import reactor.core.publisher.Flux;
+
+public class Flux5FromRange {
+
+	public static void main(String[] args) {
+		
+		
+		
+
+	}
+
+}

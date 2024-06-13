@@ -1,0 +1,17 @@
+package java_reactive_demo.flux;
+
+import java.util.List;
+
+import reactor.core.publisher.Flux;
+
+public class Flux4FromStream {
+
+	public static void main(String[] args) {
+		
+		List.of();
+		
+		Flux.fromStream(null); 
+
+	}
+
+}

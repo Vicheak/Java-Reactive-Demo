@@ -2,7 +2,11 @@ package java_reactive_demo.util;
 
 import java.util.function.Consumer;
 
+import com.github.javafaker.Faker;
+
 public class Util {
+	
+	private static final Faker FAKER = Faker.instance(); 
 	
 	public static Consumer<String> onNext() {
 		return x -> System.out.println("onNext : " + x);
@@ -22,6 +26,10 @@ public class Util {
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
+	}
+	
+	public static Faker faker() {
+		return FAKER; 
 	}
 
 }

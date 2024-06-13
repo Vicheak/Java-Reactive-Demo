@@ -1,0 +1,13 @@
+package java_reactive_demo.flux;
+
+import java_reactive_demo.util.ColorGenerator;
+
+public class Flux8FluxVsList {
+
+	public static void main(String[] args) {
+		
+		ColorGenerator generator = new ColorGenerator(); 
+
+	}
+
+}

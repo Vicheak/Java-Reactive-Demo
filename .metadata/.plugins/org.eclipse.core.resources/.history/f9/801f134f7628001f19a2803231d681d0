@@ -1,0 +1,9 @@
+package java_reactive_demo.util;
+
+public class ColorGenerator {
+	
+	private String getColor() {
+		return Util.faker().color().name(); 
+	}
+
+}

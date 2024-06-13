@@ -1,0 +1,10 @@
+package java_reactive_demo.flux;
+
+public class Flux1 {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

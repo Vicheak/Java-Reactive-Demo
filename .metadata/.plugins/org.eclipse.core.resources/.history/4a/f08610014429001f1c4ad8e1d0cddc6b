@@ -1,0 +1,30 @@
+package java_reactive_demo.exercise;
+
+import java.util.Random;
+
+import reactor.core.publisher.Flux;
+
+public class FluxExercise {
+	
+	public static void main(String[] args) {
+		
+		Flux<Integer> flux = Flux.just(100); 
+		flux
+			.doOnNext(price -> {
+			
+			});
+			
+	}
+	
+	private static Integer updatePrice(Integer price) {
+		return price + getUpdatePriceInterval(); 
+	}
+	
+	private static int getUpdatePriceInterval() {
+		int[] numbers = {-4,-3,-2,-1,0,1,2,3,4};
+	    Random random = new Random();
+	    int randomIndex = random.nextInt(numbers.length);
+		return numbers[randomIndex]; 
+	}
+
+}
